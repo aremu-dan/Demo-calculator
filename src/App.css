@@ -1,0 +1,153 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background: #dbdbdb;
+}
+
+.App {
+  text-align: center;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  background: darkslategray;
+  background: inherit;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.el-circular {
+  position: absolute;
+  height: 30vmax;
+  width: 30vmax;
+  border-radius: 50%;
+  border: 1vmax solid orange;
+}
+.el-circular:nth-child(1) {
+  top: -10vmin;
+  right: -11vmax;
+}
+.el-circular:nth-child(2) {
+  height: 30vmin;
+  width: 30vmin;
+  bottom: -13vmin;
+  left: -13vmin;
+}
+
+.app-container {
+  display: absolute;
+  height: 700px;
+  max-height: calc(100vh - 40px);
+  width: 428px;
+  max-width: calc(100vw - 40px);
+  border-radius: 20px;
+  overflow: hidden;
+  text-align: left;
+  box-shadow: 5vmin 5vmin 5vmin 1vmin rgba(0, 0, 0, 0.1);
+  background: black;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 5;
+  /* background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+  background-blend-mode: multiply, multiply; */
+}
+
+.el-screen {
+  display: absolute;
+  /* min-height: 40vmin; */
+  /* height: fit-content; */
+  /* height: calc(428px); */
+  height: calc(100% - 428px);
+  /* max-height: calc(100% - (100vw - 40px)); */
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  background: #f5f2d0;
+  background: #dec19b;
+  background: purple;
+}
+.el-screen-equation,
+.el-screen-input {
+  text-align: right;
+  padding: 5px 20px;
+  box-sizing: border-box;
+  color: white;
+  font-weight: lighter;
+  font-size: 4.8vmin;
+  height: fit-content;
+}
+.el-screen-equation {
+  position: relative;
+  min-height: 20px;
+  width: 100%;
+  margin-bottom: 5px;
+  color: cornsilk;
+  font-size: 2.2vmin;
+}
+.el-screen-input {
+  position: relative;
+  min-height: 60px;
+  width: 100%;
+}
+/* .el-screen-switch {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background: #f5f2d0;
+} */
+
+.el-button-case {
+  display: relative;
+  /* height: calc((100% - 40vmin) + 23px); */
+  height: fit-content;
+  width: 100%;
+  background: white;
+  border-radius: 20px 20px 0 0;
+  /* margin-top: -20px; */
+  overflow: hidden;
+  /* box-sizing: border-box; */
+  background: blue;
+}
+.el-button-case .bill {
+  position: relative;
+  width: 100%;
+  padding-top: 120%;
+  background: red;
+}
+.el-button-case .buttons {
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+
+  width: 100px;
+  height: 40px;
+
+  background: yellow;
+  padding: 50px 30px 30px 30px;
+  display: grid;
+  grid-gap: 1.5vmin;
+  grid-template: auto auto auto auto auto / auto auto auto auto;
+}
+.el-button-case button {
+  border: 2px inset grey;
+  outline: none;
+  color: #999;
+  background: white;
+  border-radius: 5px;
+}
