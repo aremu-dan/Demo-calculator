@@ -31,18 +31,18 @@ html {
 
 .el-circular {
   position: absolute;
-  height: 30vmax;
-  width: 30vmax;
+  height: 35vmax;
+  width: 35vmax;
   border-radius: 50%;
-  border: 1vmax solid orange;
+  border: 1.3vmax solid orange;
 }
 .el-circular:nth-child(1) {
-  top: -10vmin;
-  right: -11vmax;
+  top: -15vmin;
+  right: -12vmax;
 }
 .el-circular:nth-child(2) {
-  height: 30vmin;
-  width: 30vmin;
+  height: 35vmin;
+  width: 35vmin;
   bottom: -13vmin;
   left: -13vmin;
 }
@@ -58,7 +58,7 @@ html {
   text-align: left;
   box-shadow: 5vmin 5vmin 5vmin 1vmin rgba(0, 0, 0, 0.1);
   background: black;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.0);
   z-index: 5;
   /* background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
   background-blend-mode: multiply, multiply; */
@@ -80,7 +80,8 @@ html {
   flex-direction: column;
   background: #f5f2d0;
   background: #dec19b;
-  background: purple;
+  background: rgba(222, 193, 155, .8);
+  /* background: transparent; */
 }
 .el-screen-equation,
 .el-screen-input {
@@ -112,23 +113,42 @@ html {
   background: #f5f2d0;
 } */
 
+.blur::before {
+  /* content: ' '; */
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  /* top: 0;
+  left: 0; */
+  /* filter: blur(5px);
+  -webkit-filter: blur(5px); */
+  /* opacity: .8; */
+}
+.el-screen.blur::before{
+  background: #dec19b;
+}
+.el-button-case.blur::before {
+  background: white;
+}
+
 .el-button-case {
   display: relative;
   /* height: calc((100% - 40vmin) + 23px); */
   height: fit-content;
   width: 100%;
-  background: white;
-  border-radius: 20px 20px 0 0;
+  background: transparent;
+  background: rgba(255, 255, 255, .8);
+  /* border-radius: 20px 20px 0 0; */
   /* margin-top: -20px; */
   overflow: hidden;
   /* box-sizing: border-box; */
-  background: blue;
+  /* background: blue; */
 }
 .el-button-case .bill {
   position: relative;
   width: 100%;
   padding-top: 120%;
-  background: red;
+  /* background: red; */
 }
 .el-button-case .buttons {
   box-sizing: border-box;

@@ -3,7 +3,7 @@ import React from 'react'
 
 function Buttons() {
   return (
-    <div className='el-button-case'>
+    <div className='el-button-case blur'>
       <div className='bill'>
         <div className='buttons'>
           {/* <button></button>
